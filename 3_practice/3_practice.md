@@ -6,7 +6,7 @@ TDD là gì?
 
 ![alt text](images/tdd.png)
 
-1. Viết test, chạy teđst và đảm bảo nó , nếu không có test nào thì stop
+1. Viết test, chạy teđst và đảm bảo nó failed, nếu không có test nào thì stop
 2. Viết code để pass test ở bước 1
 3. Refactor lại code sau đó chạy lại test, nếu failed quay lại b2, nếu pass quay về b1
 
@@ -184,9 +184,9 @@ RSpec.describe CustomersController, type: :controller do
 end
 ```
 
-- Test dữ liệu trả về với các action show, edit, list
-
 Ngoài ra còn có service, helper, ở những phần này chúng ta nên test tất cả các đoạn code có ở trong service đó.
+đa phần các bạn lập trình viên mới thường bị mê hoặc bởi con số 100% cover code, tuy nhiên trong khái niệm của test ngoài cover code thì còn có cover case nữa. xét ví dụ dưới đây
+
 - Vậy theo mọi người khi viết test thì viết như thế nào là đúng và như thế nào là đủ? để trả lời cho câu hỏi trên thì mình sẽ đi đến các khái niệm về độ bao phủ code lần lượt là C0, C1, C2
 
 
